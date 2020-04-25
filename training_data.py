@@ -14,7 +14,7 @@ def training_data_angle():
     avg_score = 0
     trainingData = []
     actions = []
-    training_games = 2000
+    training_games = 20
     for i in range(training_games):
         flag = True
         print("#Game:", i+1)
