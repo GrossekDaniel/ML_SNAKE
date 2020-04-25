@@ -26,14 +26,6 @@ def training_data_angle():
 
             new_action_angle = snake_game.generate_next_direction(angle, action)
 
-            '''
-
-            -1  => LEFT
-            0   => AHEAD
-            1   => RIGHT
-
-            '''
-
             left, front, right = snake_game.is_direction_blocked_data(action, snake_List)
 
             if angle > 0:
@@ -79,15 +71,10 @@ def training_data_angle():
                 max_score = score
 
             if game_over == 0:
+                
                 data = [left, front, right, angle]
-
                 actions.append(action_ml)
-
                 trainingData.append(data)
-
-                #print('DATA:', data)
-                #print('PREDICTED:', action_ml)
-
                 action, snake_position, apple_position, score, snake_List, game_over = snake_game.play_game(
                     new_action_angle)
 
