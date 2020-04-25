@@ -3,8 +3,6 @@ import random
 import math
 import numpy as np
 
-training_data = []
-
 
 def our_snake(snake_list, window): #Wydrukowanie snake
     for z in snake_list:
