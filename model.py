@@ -1,4 +1,4 @@
-from training_data_2 import training_data_angle
+from training_data import training_data_angle
 from keras.models import Sequential
 from keras.layers import Dense
 import numpy as np
