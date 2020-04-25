@@ -7,7 +7,7 @@ import numpy as np
 def run_game_with_ML(model):
     max_score = 0
     avg_score = 0
-    test_games = 100
+    test_games = 10
     game = 0
 
     for _ in range(test_games):
