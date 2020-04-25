@@ -1,14 +1,8 @@
-#rom snake_game import *
 from training_data_2 import training_data_angle
 from keras.models import Sequential
 from keras.layers import Dense
+import numpy as np
 
-'''
-LEFT    -> button_direction = 0
-RIGHT   -> button_direction = 1
-UP      -> button_direction = 2
-DOWN    -> button_direction = 3
-'''
 training_data_x, training_data_y = training_data_angle()
 
 model = Sequential()
